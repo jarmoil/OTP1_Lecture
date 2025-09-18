@@ -8,13 +8,13 @@ public class TemperatureConverterTest {
         TemperatureConverter converter = new TemperatureConverter();
 
         // Test normal case
-        assertEquals(0.0, converter.fahrenheitToCelsius(32.0), 0.01);
+        assertEquals(0.0, converter.fahrenheitToCelsius(32.0), 0.0);
 
         // Test negative Fahrenheit
-        assertEquals(-40.0, converter.fahrenheitToCelsius(-40.0), 0.01);
+        assertEquals(-40.0, converter.fahrenheitToCelsius(-40.0), 0.0);
 
         // Test very high Fahrenheit
-        assertEquals(100.0, converter.fahrenheitToCelsius(212.0), 0.01);
+        assertEquals(100.0, converter.fahrenheitToCelsius(212.0), 0.0);
     }
 
     @Test
@@ -22,13 +22,13 @@ public class TemperatureConverterTest {
         TemperatureConverter converter = new TemperatureConverter();
 
         // Test normal case
-        assertEquals(32.0, converter.celsiusToFahrenheit(0.0), 0.01);
+        assertEquals(32.0, converter.celsiusToFahrenheit(0.0), 0.0);
 
         // Test negative Celsius
-        assertEquals(-40.0, converter.celsiusToFahrenheit(-40.0), 0.01);
+        assertEquals(-40.0, converter.celsiusToFahrenheit(-40.0), 0.0);
 
         // Test very high Celsius
-        assertEquals(212.0, converter.celsiusToFahrenheit(100.0), 0.01);
+        assertEquals(212.0, converter.celsiusToFahrenheit(100.0), 0.0);
     }
 
     @Test
@@ -36,13 +36,13 @@ public class TemperatureConverterTest {
         TemperatureConverter converter = new TemperatureConverter();
 
         // Test normal case
-        assertEquals(0.0, converter.kelvinToCelsius(273.15), 0.01);
+        assertEquals(0.0, converter.kelvinToCelsius(273.15), 0.0);
 
         // Test absolute zero
-        assertEquals(-273.15, converter.kelvinToCelsius(0.0), 0.01);
+        assertEquals(-273.15, converter.kelvinToCelsius(0.0), 0.0);
 
         // Test high Kelvin
-        assertEquals(100.0, converter.kelvinToCelsius(373.15), 0.01);
+        assertEquals(100.0, converter.kelvinToCelsius(373.15), 0.0);
     }
 
     @Test
@@ -63,7 +63,7 @@ public class TemperatureConverterTest {
         // Test a series of conversions to ensure accuracy
         double fahrenheit = 100.0;
         double celsius = converter.fahrenheitToCelsius(fahrenheit);
-        assertEquals(fahrenheit, converter.celsiusToFahrenheit(celsius), 0.01);
+        assertEquals(fahrenheit, converter.celsiusToFahrenheit(celsius), 0.0);
     }
 
 
