@@ -24,7 +24,7 @@
     </dependencies>
 
     <build>
-        <finalName>tempconverter</finalName>
+        <finalName>TemperatureConverter</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -75,7 +75,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>Tempconverter</mainClass>
+                            <mainClass>TemperatureConverter</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
